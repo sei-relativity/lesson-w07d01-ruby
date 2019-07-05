@@ -93,7 +93,7 @@ Let's make a directory for our random Ruby scripts.
 
 ```bash
 # bash
-cd ~/ga/wdi/exercises
+cd ~/sei/tmp
 mkdir ruby_scripts
 cd ruby_scripts
 touch example.rb
