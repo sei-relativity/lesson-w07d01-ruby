@@ -2,7 +2,6 @@
 
 ## Objectives
 
-* [Install Ruby via Installfest Scripts](https://github.com/wdi-infinity/installfest)
 * Install Ruby via rbenv
 * Have the correct Ruby running
 * Easily switch Ruby versions
