@@ -18,7 +18,7 @@ Add "Heart" to the end of `planeteers`.
 # Your answer here
 ```
 
-Remove "Captain Planet" from the array (without using a method).
+Remove "Captain Planet" from the array **(without using a method)**.
 
 ```rb
 # Your answer here
