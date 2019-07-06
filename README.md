@@ -209,6 +209,17 @@ Ruby uses same arithmetic operators as JavaScript:
 # => 9
 ```
 
+Examples:
+
+```ruby
+p 0.1
+p 42
+p 124971240712
+p 1_234_567
+```
+
+Underscores are ignored in Ruby numbers. Making them useful for readability.
+
 ### Strings
 
 Words, just like in JavaScript.
@@ -419,6 +430,64 @@ if num.even?
   "#{num} is even!"
 else
   "#{num} is odd!"
+end
+```
+
+#### Case statement
+
+The case statement in Ruby, can be seen as a shorthand for a series of `if` statements. Unlike other languages, there is no fallthrough. Only the first matching case will be executed.
+
+Example:
+
+```ruby
+num_of_wheels = 1
+
+case num_of_wheels
+when 1
+  p "Unicycle"
+when 2
+  p "Bicycle"
+when 4
+  p "Car"
+else
+  p "I'm not sure"
+end
+```
+
+Let's redo the roller coaster example from before where we check for height using the case statement this time.
+
+```ruby
+puts "Welcome to the Iron Rattler! How tall are you (in feet)?"
+height = gets.chomp.to_i
+
+case
+when height < 4
+  puts "Sorry, you'll fly out of your seat if we let you on."
+when height < 7
+  puts "All aboard!"
+else
+  puts "If you value your head, you should not get on this ride."
+end
+```
+
+##### A More Compact Syntax
+
+There are times when there are a large number of small `when` clauses. Such a case statement easily grows too large to fit on the screen. When this is the case (no pun intended), you can use the `then` keyword to put the body of the `when` clause on the same line.
+
+While this makes for some very dense code, as long as each when clause is very similar, it actually becomes more readable.
+
+When you should use single-line and multi-line when clauses are up to you, it's a matter of style. However, mixing the two is not recommended - a case statement should follow a pattern to be as readable as possible.
+
+Example:
+
+```ruby
+person_name = "Alanoud"
+
+case person_name
+when "Usman" then p "Lead Instructor"
+when "Alanoud" then p "IA"
+else
+  p "Student"
 end
 ```
 
