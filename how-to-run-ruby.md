@@ -1,16 +1,14 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
-
-# Running your Ruby scripts
+# Running your Ruby Scripts
 
 You'll interact with your .rb files in a very similar way to your .js files.
 
-You'll use the `ruby` command and the repl `pry` instead of using $`node` like you did for Javascript.
+You'll use the `ruby` command and the repl `pry` instead of using $`node` like you might do for JavaScript.
 
 ### REALLY IMPORTANT
 
 Ruby *DOES NOT* run in the browser. It is *purely* a server side. You will only be able to load it into the terminal.
 
-Remember that Javascript runs server side as well as in the brower.
+Remember that JavaScript runs server side as well as in the browser.
 
 
 ## Running ruby files
@@ -43,48 +41,45 @@ gem install cowsay
 
 ## Installing Pry
 
-1. To install `pry`, we will install a Ruby Gem.  This is similar to the packages that you install using `npm`.
+1. To install `pry`, we will install a Ruby Gem. This is similar to the packages that you install using `npm`.
 
 ```bash
   gem install pry
   gem install pry-doc
 ```
 
-2. To start pry, simply type `pry` in the command line.  You should now see something like this.
+2. To start pry, simply type `pry` in the command line. You should now see something like this.
 
 ![Pry](./images/pry.png)
 
 3. You can now run any ruby code, similar to when we type JavaScript into `node`
 
 
-## Loading files into pry
+## Loading files into Pry
 
-You can also load ruby files into the `pry` repl using the `load`
+You can also load Ruby files into the `pry` repl using the `load`
 
-1. add a method to `test.rb`
+1. Add the following statement to `test.rb`
 
   ```ruby
-  def hello
-    puts "hello from test.rb hello method"
-  end
+  puts "hello from test.rb hello method"
   ```
 
-2. Start pry $`pry` in the same directory as your ruby file
+2. Start pry $`pry` in the same directory as your Ruby file
 
-3. In `pry` run `load 'test.rb'` it should return `true`. If it doesn't you likely did not specify the path correctly.
+3. In `pry` run `load 'test.rb'` it should print the message and return `true`. If it doesn't you likely did not specify the path correctly.
 
-4. You should now have access to all the code in test.rb.
-  - try invoking the `hello` method
+4. You should now have access to all the code in `test.rb`.
 
-5. Add a new method to test.rb
+5. Add another statement to `test.rb`.
 
-6. Run `load 'test.rb'` again and invoke the new function!
+6. Run `load 'test.rb'` again to see the new results!
 
-## Gaining command line superpowers in Ruby
+## Gaining Command Line superpowers in Ruby
 
 Through `pry`, you have access to several commands that are commonly available in the command line.
 
-Command line actions like `ls` and `cd` are available in pry.  This will allow you to explore various classes.  Since Ruby is an Object Oriented Language, this allows us to explore EVERYTHING.
+Command line actions like `ls` and `cd` are available in `pry`. This will allow you to explore various classes. Since Ruby is an Object Oriented Language, this allows us to explore EVERYTHING.
 
 Let's dive into the String class.
 
@@ -100,13 +95,13 @@ Now lets see what is available for us to use in the String class.
 ls
 ```
 
-Using ls, we can see that there are plenty of methods available for us when using the String class. But what do these mean? Lets use the pry-docs to figure out what an String.downcase does
+Using `ls`, we can see that there are plenty of methods available for us when using the String class. But what do these mean? Lets use the pry-docs to figure out what an `String.downcase` does.
 
 ```
 ? downcase
 ```
 
-Now you should see some documentation on what the method does!  This can be great in a pinch when you need to know what a method does.
+Now you should see some documentation on what the method does! This can be great in a pinch when you need to know what a method does.
 
 ## Lab (5 minutes)
 
