@@ -815,7 +815,7 @@ Normally, only two dots are used. If a third dot is used, the last value in the 
 
 ```(0...5)``` represents the numbers 0 through 4.
 
-## Data Collection Exercise - Lab / Homework (30 minutes)
+## Data Collection Exercise - Lab (30 minutes)
 Complete the exercises in [this document](data-collections-exercises.md).
 
 ## Ruby Code Style Guide
