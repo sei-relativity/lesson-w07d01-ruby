@@ -21,7 +21,7 @@ Remember that JavaScript runs server side as well as in the browser.
 
 ## Running ruby in the REPL
 
-Ruby comes with a REPL called `irb` (Interactive Ruby Shell).  This is similar to us using the `node` command to write JS in the command line.  While irb is good for basic ruby, there is another option called `pry` which is like irb with superpowers.  We'll be using this throughout the course to debug.
+Ruby comes with a REPL called `irb` (Interactive Ruby Shell).  This is similar to us using the `node` command to write JS in the command line.  While `irb` is good for basic Ruby, there is another option called `pry` which is like `irb` with superpowers. We'll be using this throughout the course to debug.
 
 ## Gems
 

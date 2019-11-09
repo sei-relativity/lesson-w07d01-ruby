@@ -14,7 +14,7 @@ The `$` means to run it in the Terminal. So if I write `$ which ruby` it means t
 
 ## Have the correct Ruby running
 
-MacOS comes with its own version of Ruby. The OS uses Ruby to run various processes. So while it’s not terrible to mess with the configuration of your systems Ruby (i.e. changing permissions, sudo installing gems etc.), it’s better just have our own version that we can change and update without worrying about the side effects.   
+MacOS comes with its own version of Ruby. The OS uses Ruby to run various processes. So while it's not terrible to mess with the configuration of your systems Ruby (i.e. changing permissions, sudo installing gems etc.), it's better just have our own version that we can change and update without worrying about the side effects.
 
 To see where the current Ruby is being executed, run: `$ which ruby`. This should output to `/usr/bin/ruby`.
 

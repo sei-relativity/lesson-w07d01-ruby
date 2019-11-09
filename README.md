@@ -222,7 +222,7 @@ Underscores are ignored in Ruby numbers. Making them useful for readability.
 
 ### Strings
 
-Words, just like in JavaScript.
+Works, just like in JavaScript.
 
 * Surrounded by single or double-quotes
 * Ruby uses similar escape characters
@@ -485,7 +485,7 @@ person_name = "Alanoud"
 
 case person_name
 when "Usman" then p "Lead Instructor"
-when "Alanoud" then p "IA"
+when "Reem" then p "IA"
 else
   p "Student"
 end
@@ -718,8 +718,8 @@ sei_class[:teacher]
 Modifying hash values...
 
 ```ruby
-sei_class[:teacher] = "Marc"
-# => "Marc"
+sei_class[:teacher] = "Reem"
+# => "Reem"
 ```
 
 You can also use strings as hash keys... 
@@ -745,8 +745,8 @@ sei_class["teacher"]
 
 And modify...
 ```ruby
-sei_class["teacher"] = "Marc"
-# => "Marc"
+sei_class["teacher"] = "Reem"
+# => "Reem"
 ```
 
 **Note the use of => (or "hash rockets") instead of : when using strings as keys.**
