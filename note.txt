@@ -1,0 +1,119 @@
+
+ Ruby is made by japanese guy "Mat" 1995
+
+ *could change the Ruby language .
+ *ruby on rails 
+
+rubygems is like npm it is for developer.it allowed developer to install liberties and packages 
+
+packages we install  
+
+1- gem install pry ; gem install pry-doc //need it for backend debugging and console 
+    - pry //run pry using pry on CML
+    - pry powerful command tools 
+    - use ? to get DOC of tools 
+    -ls will show obj
+    -cd String will take you to String obj that can use ls to show all methodes 
+    -gets is methods to get input from user 
+        -   gets.chomp gets input without "/n"
+    -gets.chomp.to_i
+2- # is used for commant 
+3- ruby can be convert to js and run in front-end
+4-Developer Experience (DX) 
+5-Ruby is used to make developer happy but twitter swich to other language for performance 
+6- can not use combine integer  and string ex "foo" +4 error
+    -to fix it "foo" +4.to_s 
+    -   num=42
+        puts "i am #{num.to_s} years" 
+
+    - scape character  \" ex  puts "i am \" #{num.to_s} years" 
+
+7- === is semantic diff than js "dont use === for check statement  "
+8 every thing is true expats nil and false 
+9. nil.nil?  ==> if (nil ==nil) return true 
+10-single line if statement
+    -age=9000
+    -puts "you'r very old!" if age>=100
+    -puts 'you are old!' unless age < 100
+11- even/old is methods return true of false
+    -num.even ?"#{num} is even:"#{num} is odd" //use pry is console  
+12-string methodes there are methods do not change origin it return a new string 
+    EX A= "aaaa"
+    a.upcase //return a new string and do 
+    a.upcase! //return chaged "a" string 
+
+    مهم 
+    a="aaa"
+    b=a // b will take the address of "a" .any change on b will change "a". 
+
+13- "".methods.sort ==>to list all the methods
+14
+        # switch statment
+    num_of_wheels = 1
+    case num_of_wheels
+    when 1
+        puts 'Unicycle'
+    when 2
+        puts 'Bicycle'
+    when 3
+        puts 'Tricycle'
+    when 4
+        puts 'Car'
+    else
+        puts 'What the hell are you riding?'
+    end
+    person_name = 'Hamza'
+    case person_name
+    when 'Hisham'then puts 'Your hero'
+    when 'Hazim'then puts 'Who Dis?'
+    else 
+        puts 'Not important enough'
+    end
+    Collapse
+
+15-:word_word ==> make const string "word word "
+16- object_id  "obaid".object_id ==> will get new address everytime.Also :obaid.object_id ==> will give you same id every time since it is const 
+17- use to_sym to convert string to const "obaid".to_sym.return to string use "obaid".to_sym.so_s
+18-first ,last both methodes use to get first last in array
+    ex ["aa","bb","r"].first ==> #"aa"
+     ex ["aa","bb","r"].first(2) ==> #["aa","bb"]
+19- add two array using (+)  [1,2,3]+[4]==>[1,2,3,4]
+    subtract element from array [1,2,4,5]-[5]==>[1,2,3,4]
+    multiply array [1]*3==>[1,1,1]
+20- hash is called in object in javascript 
+21-delete(value) method delete all the element in array equals to it ,delet_at (index)==>del only elm with the index
+
+22-key in hash can be either string or key
+ 
+
+23- p is shortcut of puts
+
+24= key of hash use symbol ":" close to the key without space  test:"ss"   not test :"ss"
+25- old way to declare hash key "techier" => 33 instead of techer: 33 
+26-if the hash key is symble than use ":" to get value .if  kay string than you dont need ":"
+27- => call it hash racket 
+28- keys is methods used to list all the key of hash .
+29- p sei[:blue][:oh]  ===> take the key hash which is in sei hash than take key inside the key hash :blue
+
+
+30- shovel operator << is good methods can used in array to add in element to the array as push method
+	ex [1,2,3,4]<<4 ==>[1,2,3,4,4] 
+	ex [1,2,3,4]<<[1,2] ==>[1,2,3,4,[1,2]]
+
+31-snake_case  name of vaariable is small and use "_" and SCREAMING_SNAKE_CASE something but it must be capital 
+
+32-Anonymous functions in js is ()=>{}
+
+33- do end is like  {} .Also using {} can wite single line of code.Otherhand do end can not work in a single line 
+34- call function  with parameters in js and you do not pass the parameters it will run .In ruby method if call a method without parameters the method need will not work 
+35- ruby methodes return the last line  if methodes does not return something 
+36- ? is called Predicate Methods in ruby 
+37-
+    By prepending & to a symbol you are creating a lambda function that will call method with a name of that symbol on the object you pass into this function. Taking that into account:
+
+    ar.map(&:reverse)
+    is roughly equivalent to:
+
+    ar.map { |element| element.reverse }
+
+38- pipe |num| is parameters that black take in ruby
