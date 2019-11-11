@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+Your answer is 8 because it is square root which would be like this 2*2*2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+Your answer is 144. It is like this ((4)*(3)) * ((4)*(3))
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+Your answer is "a milli a millia milli a millia milli a milli". It is (a milli a milli) multipiled by itself 3 times
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Your answer would be an error because ruby cannot devide 4 "a milli" by 2
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Your answer is error because cannot add number to string with this syntax
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+Your answer is My favorite number is: 13 in this syntax.
 ```
 
 ### Truthiness and Falsiness
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer is 'My name is:'
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer is nil
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer is error because the syntax is wrong
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer is error because the synats is wrongly written
 ```
 
 ### Conditionals
