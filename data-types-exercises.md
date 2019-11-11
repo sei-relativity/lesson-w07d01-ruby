@@ -9,29 +9,30 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```rb
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```rb
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+```rb
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error
+cant do math with strings
 ```
 
 ```rb
@@ -39,7 +40,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error
+cant add to strings
 ```
 
 ```rb
@@ -47,7 +49,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +57,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[X] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[X] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +80,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
 ```
 
 ```rb
@@ -88,7 +90,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothing
 ```
 
 ```rb
@@ -98,7 +100,8 @@ if age
 end
 ```
 ```text
-Your answer.
+Error
+no_name is undefined
 ```
 
 ```rb
@@ -108,7 +111,8 @@ if age
 end
 ```
 ```text
-Your answer.
+Error
+can't add to string
 ```
 
 ### Conditionals
@@ -134,10 +138,21 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+i = 1
+while i <= 100
+  # Your code goes in here.
+  case
+  when i%3==0&&i%5==0
+    puts "FizzBuzz"
+  when i%3==0
+  puts "Fizz"
+  when i%5==0
+  puts "Buzz"
+  else 
+  puts i
+end
+i+=1
+end
   ```
 
 </details>
