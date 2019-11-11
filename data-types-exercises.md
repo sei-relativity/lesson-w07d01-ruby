@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8 Because ** means power
 ```
 
 ```rb
-((16 / 4) * (2 + 1)) ** 2
+12 ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a milli a milli a milli a milli a milli 
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+error out because we don't compain the values into a text by + sign but with #{}
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorate number is 13 
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[ ] false false
+[ ] 0 false
+[ ] "" false 
+[ ] null false
+[ ] [ ] (empty array)  
+[ ] undefined false
+[ ] NaN false 
+[ ] nil false 
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+error out because we don't compain the values into a text by + sign but with #{}
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+error out because we don't compain the values into a text by + sign but with #{}
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+error out because we don't compain the values into a text by + sign but with #{}
 ```
 
 ```rb
