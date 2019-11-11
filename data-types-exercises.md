@@ -8,7 +8,7 @@
 
 ```rb
 2 ** 3
-```
+8
 ```text
 Your answer.
 ```
@@ -17,21 +17,21 @@ Your answer.
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a millia milli a millia milli a millia milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+error
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+error
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -56,12 +56,7 @@ Your answer.
 
 ```text
 [ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
+
 [ ] nil
 ```
 
@@ -77,8 +72,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+My name is: 
+
 ```
 
 ```rb
@@ -88,7 +83,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+ nil
 ```
 
 ```rb
@@ -97,9 +92,9 @@ if age
   puts "My age is: " + no_name
 end
 ```
-```text
-Your answer.
-```
+
+error
+
 
 ```rb
 age = gets.chomp
@@ -108,8 +103,7 @@ if age
 end
 ```
 ```text
-Your answer.
-```
+My age is: <age>
 
 ### Conditionals
 
