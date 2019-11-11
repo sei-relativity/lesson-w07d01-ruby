@@ -481,7 +481,7 @@ When you should use single-line and multi-line when clauses are up to you, it's 
 Example:
 
 ```ruby
-person_name = "Alanoud"
+person_name = "Reem"
 
 case person_name
 when "Usman" then p "Lead Instructor"
