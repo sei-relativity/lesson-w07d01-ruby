@@ -10,44 +10,44 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
-```
+NoMethodError: undefined method `/' for "a milli a milli a milli a milli ":String
+from (pry):22:in `__pry__'```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
-```
+TypeError: no implicit conversion of Integer into String
+from (pry):27:in `+'```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[$] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[$] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +98,8 @@ if age
 end
 ```
 ```text
-Your answer.
+age = gets.chomp TypeError: no implicit conversion of nil into String
+from (pry):50:in `+'
 ```
 
 ```rb
@@ -108,7 +109,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 23
 ```
 
 ### Conditionals
@@ -133,11 +134,19 @@ Your output should look something like this...
 <details>
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
+
+
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+ number = gets.chomp
+if number % 3
+puts "Fiz"
+
+elsif number % 5
+puts "buzz"
+
+else 
+puts "Fizzbuzz"
+end
   ```
 
 </details>
